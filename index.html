@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampFit - Build Your Body</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">CAMPFIT</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="trainers.html">Trainers</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="slide-in-left">BUILD YOUR BODY INTO A <span class="green">HEALTHY</span> AND <span class="green">STRONG BODY.</span></h1>
+            <p class="slide-in-left delay-1">Sport is part of health, so be diligent in exercising so that the body becomes stronger and healthier to improve health and keep away from injury</p>
+            <button class="cta-btn slide-in-left delay-2" id="registerBtn">Register Now</button>
+        </div>
+        <div class="hero-image slide-in-right">
+            <img src="images/hero-image.png" alt="Fit Man">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card fade-in">
+            <img src="images/equipment.webp" alt="Equipment">
+            <div class="feature-overlay">
+                <h3>Top Equipment</h3>
+            </div>
+        </div>
+        <div class="feature-card fade-in delay-1">
+            <img src="images/trainers-feature.webp" alt="Trainers">
+            <div class="feature-overlay">
+                <h3>Best Trainers</h3>
+            </div>
+        </div>
+        <div class="feature-card fade-in delay-2">
+            <img src="images/environment.webp" alt="Environment">
+            <div class="feature-overlay">
+                <h3>Premium Environment</h3>
+            </div>
+        </div>
+        <div class="feature-card fade-in delay-3">
+            <img src="images/programs.webp" alt="Programs">
+            <div class="feature-overlay">
+                <h3>Custom Programs</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe To Our <span class="green">Newsletter</span></h2>
+        <p>Get the latest updates on fitness tips, new programs, and exclusive offers</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CAMPFIT</h3>
+                <p>Building stronger, healthier bodies since 2020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@campfit.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CampFit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register <span class="green">Now</span></h2>
+            <form id="registrationForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Program</option>
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium</option>
+                    <option value="elite">Elite</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
